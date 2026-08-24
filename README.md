@@ -16,7 +16,7 @@ AI/ML engineer with **2+ years** shipping production AI systems. I fine-tune tra
 ## 🔦 Featured — RBI Circular Intelligence System
 
 **Hybrid RAG pipeline over 317 RBI regulatory circulars** (2022–2024, ~2.75M words)
-**[→ github.com/Yougal17/rbi-rag](https://github.com/Yougal17/rbi-rag)**
+**[Live demo](https://rbi-circular-intelligence.vercel.app)** · **[Repo](https://github.com/Yougal17/rbi-rag)** · **[API docs](https://rbi-backend.koyeb.app/docs)**
 
 | | | | |
 |:--|:--|:--|:--|
@@ -86,9 +86,9 @@ AI/ML engineer with **2+ years** shipping production AI systems. I fine-tune tra
 
 | Project | What it does | Stack |
 |:--|:--|:--|
-| **Geospatial Segmentation with SAM** | Fine-tuned Meta's Segment Anything Model for land-use classification and boundary detection | `PyTorch` `OpenCV` `FastAPI` |
-| **Semantic Segmentation · SegFormer** | Multi-class remote sensing pipeline with custom loss functions for imbalanced classes | `TensorFlow` `SegFormer` `NumPy` |
-| **Food Product Classification** | End-to-end ML pipeline with custom scraping for market intelligence — 95% accuracy | `scikit-learn` `Pandas` `BeautifulSoup` |
+| **[Lead Response Assistant](https://github.com/Yougal17/Lead-Response-Assistant)** | Multi-step LLM workflow — structured extraction, deterministic gap detection, rule-based safety guard | `Llama 3.1` `Ollama` `Python` |
+| **[Helmet Detection · SSD](https://github.com/Yougal17/Helmet-Detection-Using-Caffe)** | Two-class SSD detector for motorcycle helmet compliance across a 764-image annotated dataset | `Caffe` `OpenCV` `SSD` |
+| **[Brain Haemorrhage Detection](https://github.com/Yougal17/Implementation-of-A-Hounsfield-value-based-approach-for-automatic-recognition-of-brain-haemorrhage-)** | Hounsfield Unit–based haemorrhage detection and staging from CT DICOM images | `pydicom` `scikit-learn` `NumPy` |
 
 ---
 
