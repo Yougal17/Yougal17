@@ -133,6 +133,9 @@ section{padding:5rem 2rem;max-width:820px;margin:0 auto;}
 .proj-body{padding:1.1rem 1.35rem;background:#fff;}
 .proj-desc{font-size:13px;color:#555;line-height:1.65;margin-bottom:0.75rem;}
 .proj-stat{font-family:var(--syne);font-size:11px;font-weight:700;color:var(--orange);letter-spacing:0.5px;text-transform:uppercase;}
+a.project-card{display:block;text-decoration:none;color:inherit;transition:transform 0.15s,box-shadow 0.15s;}
+a.project-card:hover{transform:translateY(-3px);box-shadow:4px 4px 0 var(--ink);}
+.proj-repo{font-family:var(--syne);font-size:11px;font-weight:700;color:var(--text-secondary);letter-spacing:0.5px;margin-top:0.5rem;display:flex;align-items:center;gap:5px;}
 
 /* EDUCATION + PUBLICATION */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
@@ -477,6 +480,10 @@ footer span{color:var(--yellow);}
           <span class="tag">Gemini 2.5</span>
           <span class="tag">RAGAS</span>
         </div>
+        <a class="repo-link" href="https://rbi-circular-intelligence.vercel.app" target="_blank" rel="noopener noreferrer" style="background:var(--ink);color:#fff;">
+          <svg class="icon" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM4.5 8h11a6.02 6.02 0 010 4h-11a6.02 6.02 0 010-4zM10 3.6c1 0 2.1 1.6 2.5 4.4h-5C7.9 5.2 9 3.6 10 3.6zm0 12.8c-1 0-2.1-1.6-2.5-4.4h5c-.4 2.8-1.5 4.4-2.5 4.4z"/></svg>
+          Live demo
+        </a>
         <a class="repo-link" href="https://github.com/Yougal17/rbi-rag" target="_blank" rel="noopener noreferrer">
           <svg class="icon" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/></svg>
           View repo
@@ -487,29 +494,32 @@ footer span{color:var(--yellow);}
 
   <div class="projects-grid">
 
-    <div class="project-card">
-      <div class="proj-header"><p class="proj-title">Geospatial Segmentation with SAM</p></div>
+    <a class="project-card" href="https://github.com/Yougal17/Lead-Response-Assistant" target="_blank" rel="noopener noreferrer">
+      <div class="proj-header"><p class="proj-title">Lead Response Assistant</p></div>
       <div class="proj-body">
-        <p class="proj-desc">Fine-tuned Meta's Segment Anything Model for land-use classification and geospatial boundary detection via transfer learning and data augmentation.</p>
-        <p class="proj-stat">▲ 70% over baseline · PyTorch · SAM</p>
+        <p class="proj-desc">Multi-step LLM workflow for customer property enquiries. Extracts structured JSON first, detects missing fields deterministically in Python, then generates advice behind a rule-based safety guard.</p>
+        <p class="proj-stat">Llama 3.1 · Ollama · Guardrails</p>
+        <p class="proj-repo"><svg class="icon" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/></svg> View on GitHub</p>
       </div>
-    </div>
+    </a>
 
-    <div class="project-card">
-      <div class="proj-header"><p class="proj-title">Semantic Segmentation · SegFormer</p></div>
+    <a class="project-card" href="https://github.com/Yougal17/Helmet-Detection-Using-Caffe" target="_blank" rel="noopener noreferrer">
+      <div class="proj-header"><p class="proj-title">Helmet Detection · SSD on Caffe</p></div>
       <div class="proj-body">
-        <p class="proj-desc">Multi-class segmentation pipeline using transformer architecture for remote sensing, with custom loss functions for imbalanced classes.</p>
-        <p class="proj-stat">Transformer CV · SegFormer · TensorFlow</p>
+        <p class="proj-desc">Two-class SSD object detector for motorcycle helmet compliance, trained end-to-end from Pascal VOC annotations through LMDB conversion to annotated inference output.</p>
+        <p class="proj-stat">764 images · Caffe · OpenCV</p>
+        <p class="proj-repo"><svg class="icon" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/></svg> View on GitHub</p>
       </div>
-    </div>
+    </a>
 
-    <div class="project-card">
-      <div class="proj-header"><p class="proj-title">Food Product Classification System</p></div>
+    <a class="project-card" href="https://github.com/Yougal17/Implementation-of-A-Hounsfield-value-based-approach-for-automatic-recognition-of-brain-haemorrhage-" target="_blank" rel="noopener noreferrer">
+      <div class="proj-header"><p class="proj-title">Brain Haemorrhage Detection</p></div>
       <div class="proj-body">
-        <p class="proj-desc">End-to-end ML pipeline with custom web scraping for data acquisition, processed with Pandas &amp; scikit-learn for market intelligence at scale.</p>
-        <p class="proj-stat">95% accuracy · Python · scikit-learn</p>
+        <p class="proj-desc">Hounsfield Unit–based detection and staging of intracranial haemorrhage from CT DICOM data, with HU-window segmentation and a KNN classification stage.</p>
+        <p class="proj-stat">DICOM · pydicom · scikit-learn</p>
+        <p class="proj-repo"><svg class="icon" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/></svg> View on GitHub</p>
       </div>
-    </div>
+    </a>
 
   </div>
 </section>
